@@ -4,19 +4,21 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class People extends Model
+class Person extends Model
 {
-    //
-     public function suppliers() {
-        return $this->hasMany(Supplier::class);
-    }
-     public function applications() {
-        return $this->hasMany(Application::class);
-    }
-   public function companies() {
+    public function company() {
         return $this->belongsTo(Company::class);
     }
+
+    public function suppliers() {
+        return $this->hasMany(Supplier::class);
+    }
+
+    public function applications() {
+        return $this->hasMany(Application::class);
+    }
 }
+
 /* {
     public function Company(){
         return $this->belongsTo(Company::class);

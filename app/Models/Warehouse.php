@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Warehouse extends Model
 {
     //
-     public function companies() {
+     public function company() {
         return $this->belongsTo(Company::class);
     }
      public function stoks() {

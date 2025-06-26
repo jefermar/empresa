@@ -7,12 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class Supplier extends Model
 {
     //
-     public function companies() {
+     public function company() {
         return $this->belongsTo(Company::class);
     }
-     public function peoples() {
-        return $this->belongsTo(People::class);
-    }
+     public function person() {
+    return $this->belongsTo(Person::class);
+}
+
      public function products() {
         return $this->hasMany(Product::class);
     }

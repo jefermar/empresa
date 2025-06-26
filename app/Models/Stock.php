@@ -7,10 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Stock extends Model
 {
     //
-    public function companies() {
+    public function company() {
         return $this->belongsTo(Company::class);
     }
-     public function warehouses() {
+     public function warehouse() {
         return $this->belongsTo(Warehouse::class);
     }
      public function product() {

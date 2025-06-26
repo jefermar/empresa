@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Company extends Model
 {
     //
-     public function peoples() {
-        return $this->hasMany(People::class);
+     public function people() {
+    return $this->hasMany(Person::class);
     }
      public function suppliers() {
         return $this->hasMany(Supplier::class);

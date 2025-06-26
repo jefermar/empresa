@@ -7,7 +7,7 @@ use App\Models\Product;
 use App\Models\Application;
 use App\Models\Stock;
 use App\Models\Supplier;
-use App\Models\People;
+use App\Models\Person;
 use App\Models\Warehouse;
 
 use Illuminate\Http\Request;
@@ -30,8 +30,8 @@ class OrmController extends Controller
         // return $Company->Products;
         // $Company=Company::find(1);
         // return $Company->Applications;
-        // $Company=Company::find(1);
-        // return $Company->Users;
+        /* $Company=Company::find(1);
+         return $Company->people;*/
         // $Company=Company::find(1);
         // return $Company->Warehouses;
         // $Company=Company::find(1);
@@ -41,17 +41,17 @@ class OrmController extends Controller
         // $Supplier=Supplier::find(1);
         // return $Supplier->Company;
         // $Supplier=Supplier::find(3);
-        // return $Supplier->User;
+        // return $Supplier->Person;
         // $Supplier=Supplier::find(1);
         // return $Supplier->Products;
 
-        // consulta de user
-        // $User=User::find(1);
-        // return $User->Company;
-        // $User=User::find(1);
-        // return $User->Suppliers;
-        // $User=User::find(1);
-        // return $User->Applications;
+        // consulta de Person
+        // $Person=Person::find(1);
+        // return $Person->Company;
+        // $Person=Person::find(1);
+        // return $Person->Suppliers;
+        // $Person=Person::find(1);
+        // return $Person->Applications;
 
         //Consultas de Product
         // $Product=Product::find(1);
@@ -79,7 +79,7 @@ class OrmController extends Controller
         // $Aplication=Application::find(1);
         // return $Aplication->Company;
         // $Aplication=Application::find(1);
-        // return $Aplication->User;
+        // return $Aplication->People;
 
 
         //consultas 1 a 1:
@@ -106,8 +106,8 @@ class OrmController extends Controller
      return $suppliers->Product; */   
 
       //persona:
-     /*$p = People::find(2);
-     return $p;*/
+     $p = Person::find(2);
+    return $p;
 
      //llama a la bodega:
      /*$warehouses = Warehouse::find(1);
